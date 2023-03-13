@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/design.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Login</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box
+    }
+    body{
+        background-color: cadetblue;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .container {
+        padding: 10px;
+        width: 30%;
+        background-color: grey;
+    }
+    .form {
+        margin-top: 30px;
+        margin-left: 380px;
+        width: 100%;
+    }
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 10px 14px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        opacity: 1;
+    }
+
+    a {
+        color:yellow;
+    }
+
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+    .login {
+        text-align: center;
+    }
+    .logo {
+        font-size: 30px;
+        color: rgb(249, 245, 245);
+        font-weight: bold;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .login1 {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .hov {
+        text-decoration: none;
+        padding: 20px;
+        color: rgb(237, 236, 236);
+        text-transform: capitalize;
+        font-size: large;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .hov:hover {
+        background-color: crimson;
+        border: 1px solid white;
+        transition: .5s;
+    }
+    .email-icon {
+        position: absolute;
+        right: 335px;
+        top: 39%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        color: red;
+    }
+</style>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Submit</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">Sign Up</a></li>
+            <li><a href="Log in.html">Log in</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <form class="formdesign" action="login.php" method="POST">
+            <div class="container">
+                <h1 class="login">Log In</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <i class="uil uil-envelope email-icon"></i>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <br>
+                <button type="submit" class="registerbtn">Login</button>
+            </div>
+
+            <div class="container create an account">
+                <p>Create an account<a href="Sign Up.html">  Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="check.js"></script>
+</body>
+
+</html>

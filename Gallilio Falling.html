@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/design.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: darkgrey;
+        margin: 0;
+        padding: 0;
+    }
+    .title h1{
+        margin-left: 10px;
+        margin-top: 0px;
+        font-size: 20px;
+        font-style: italic;
+        color:cyan;
+    }
+    .title h2{
+        margin-left: 220px;
+        margin-top: 350px;
+        font-size: 20px;
+        font-style: italic;
+        color: yellow;
+    }
+    .second h2{
+        margin-left: 600px;
+        margin-top: -20px;
+        font-size: 20px;
+        font-style: italic;
+        color: yellow;
+    }
+    .loader {
+        position: absolute;
+        top: 55%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        border: 6px solid black;
+        background-color:azure;
+        display: flex;
+        padding: 0 110px 270px;
+    }
+
+    .small {
+        margin-left: 0px;
+        margin-top: 0px;
+        background-color: brown;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        animation: movesmall 4s linear;
+    }
+
+    .big {
+        margin-left: 30px;
+        margin-top: 0px;
+        background-color: brown;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        animation: movebig 4s linear;
+    }
+
+    @keyframes movesmall {
+
+        100% {
+            transform: translateY(300px);
+        }
+    }
+
+    @keyframes movebig {
+        100% {
+            transform: translateY(275px);
+        }
+    }
+    .nextloader {
+        position: absolute;
+        top: 48%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        border-bottom: 6px solid black;
+        display: flex;
+        padding: 0 100px 270px;
+    }
+
+    .tiny {
+        margin-left: 0px;
+        margin-top: 80px;
+        background-color: brown;
+        height: 20px;
+        width: 20px;
+        border-radius: 100%;
+        animation: movetiny 4s linear;
+    }
+
+    .massive {
+        margin-left: 30px;
+        margin-top:80px;
+        background-color: brown;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        animation: movemass 2.5s linear ;
+    }
+
+    @keyframes movetiny {
+        100%{
+            transform: translateY(300px);
+        }
+    }
+
+    @keyframes movemass{
+        100% {
+           transform:translatey(275px);
+        }
+       
+    }
+</style>
+<script>
+
+</script>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">SignUp</a></li>
+            <li><a href="Log in.html">Login</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+    </nav>
+    <div class="loader">
+        <div class="small"></div>
+        <div class="big"></div>
+    </div>
+
+    <div class="nextloader">
+        <div class="tiny"></div>
+        <div class="massive"></div>
+    </div>
+    <div class="title">
+        <h1>Galileo’s Falling Bodies Animation</h1>
+        <h2>With Air Friction</h2>
+    </div>
+    <div class="second">
+        <h2> Without Air Frition</h2>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>

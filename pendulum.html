@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/pendulum.css">
+    <link rel="stylesheet" href="Style/design.css">
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: cadetblue;
+    }
+
+    .container {
+       position: center;
+       margin-top:50px;
+    }
+</style>
+
+<script>
+    Start.addEventListener("click",function(){
+        thread.style.webkitAnimation = 'moveit 2.5s ease-in-out 2';
+        shadow.style.webkitAnimation = " moveshade 1.25s ease-in-out alternate 4";
+    });
+
+    Start.addEventListener("click",function(){
+        thread.style.webkitAnimation = '';
+        shadow.style.webkitAnimation = " ";
+    });
+
+    
+</script>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">Sign Up</a></li>
+            <li><a href="Log in.html">Log in</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="base">
+            <div class="holder"></div>
+            <div class="thread">
+                <div class="knob"></div>
+                <div class="pendulum"></div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+
+</html>

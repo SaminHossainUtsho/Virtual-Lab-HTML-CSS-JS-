@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/design.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    body {
+
+        background-color: gray;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    :root {
+        --grey: grey;
+        --blue: blue;
+        --green: green;
+        --white: white;
+    }
+     h1 {
+        margin-left: 100px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-style: italic;
+        color: magenta;
+    }
+    .RB_flask {
+
+        margin-top: 50px;
+        margin-left: 50px;
+        position: relative;
+        
+        animation: shake 1.3s ease-in-out;
+    }
+
+    .RB_flask::after {
+        position: absolute;
+        content: '';
+        top: -7%;
+        left: 65%;
+        transform: translateX(-34%) rotate(28deg);
+
+        width: 4.5rem;
+        height: 5.5rem;
+        background-color: var(--grey);
+        border: .2rem solid var(--white);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .chemical {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(25deg);
+        width: 14rem;
+        height: 14rem;
+        border: .2rem solid var(--white);
+        border-top: .2rem solid var(--grey);
+        border-radius: 50%;
+
+        outline: .2rem solid var(--white);
+        outline-offset: .5rem;
+        overflow: hidden;
+    }
+
+    .chemical::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 15%;
+        transform: rotate(75deg);
+        width: 100%;
+        height: 130%;
+        background-color: var(--green);
+    }
+
+    .RB_flask {
+        position: relative;
+        height: 20rem;
+        width: 25rem;
+        animation: shake 1.3s ease-in-out;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(-20);
+        }
+
+        40% {
+            transform: translateX(20);
+        }
+
+        60% {
+            transform: translateX(-20);
+        }
+
+        80% {
+            transform: translateX(20);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .chemical::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 15%;
+        transform: rotate(80deg);
+        width: 100%;
+        height: 130%;
+        background-color: var(--green);
+        animation: wave 6s linear infinite;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(75deg);
+            background-color: var(--white);
+        }
+
+        10% {
+            transform: rotate(69deg);
+        }
+
+        20% {
+            transform: rotate(62deg);
+        }
+
+        30% {
+            transform: rotate(69deg);
+        }
+
+        40% {
+            transform: rotate(75deg);
+        }
+
+        50% {
+            transform: rotate(80deg);
+        }
+
+        60% {
+            transform: rotate(85deg);
+        }
+
+        70% {
+            transform: rotate(90deg);
+            background-color:var(rgb(29, 204, 29));
+        }
+
+        80% {
+            transform: rotate(85deg);
+        }
+
+        90% {
+            transform: rotate(80deg);
+        }
+
+        100% {
+            transform: rotate(75deg);
+            
+        }
+
+    }
+
+    .materials {
+        height: 30px;
+        width: 50px;
+        margin-top: 100px;
+        margin-left: 300px;
+        display: flex;
+
+    }
+
+    .materials button {
+        margin-left: 30px;
+    }
+    .top {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .top p {
+        margin: auto;
+        box-sizing: border-box;
+        border: 3px white solid;
+        width: 90%;
+        padding: 3px;
+        text-align: justify;
+        color:maroon;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+
+    }
+</style>
+
+
+<body>
+
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">SignUp</a></li>
+            <li><a href="Log in.html">Login</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+    </nav>
+    <h1 "><p>FeSO<sub>4</sub> + 2 NaOH → Fe(OH)<sub>2</sub> + Na<sub>2</sub>SO<sub>4</sub></p></h1>
+    <div class="container">
+        
+        <div class="RB_flask" draggable="true">
+            <div class="chemical">
+                    
+            </div>
+        </div>
+
+    </div>
+    <div class="top">
+        <br>
+        <h3>
+            Introduction 
+        </h3>
+        <br>
+        <p>
+            Insects are arthropods with jointed appendages, segmented bodies,
+            and an exoskeleton composed of chitin. Insects are in the class Insecta,
+            & are the largest and most diverse group of animals on earth. The genus
+            Romalea is a large grasshopper common in the southeastern United States.
+            Insects have three body regions (head, thorax, & abdomen),
+            3 pairs of legs attached to the thorax, a single pair of
+            antenna attached to the head, mouthparts adapted for chewing
+            or sucking, and two pairs of wings. Some insects may have a
+            single pair of wings or be wingless. Insect legs are often
+            adapted for digging, crawling, jumping, or swimming.
+            The insects are mostly terrestrial, they breathe air which enters small
+            lateral openings on the body called spiracles and circulates in a system of ducts to all organs and tissues.
+            Their chewing or sucking mouth parts are adapted for feeding on plant or animal materials.
+
+        </p>
+        <br><br>
+
+        <b>Objective</b>
+        <p>
+            To learn about the reaction and how it actually look like.
+        </p>
+        <br><br>
+        <b>
+            Materials
+        </b>
+        <p>
+            Lab apron, gloves, eyeglasses, Chemical Equipments
+        </p>
+        <br><br>
+       
+
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>

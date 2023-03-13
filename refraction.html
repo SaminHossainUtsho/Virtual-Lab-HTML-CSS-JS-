@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="light.css">
+    <link rel="stylesheet" href="Style/design.css">
+    <title>light</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: cadetblue;
+        overflow: hidden;
+    }
+    
+    .h {
+        width: 30%;
+        height: 150px;
+        border: 0 none transparent;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 200px;
+        margin-bottom: 10px;
+        background-color: ghostwhite
+    }
+
+    .v {
+        border-left: 5px black dotted;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        margin-left: 6px;
+        top: 80px;
+    }
+
+    .i {
+        border-left: 5px rgb(53, 10, 244) dotted;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        margin-left: 4px;
+        top: 81px;
+        transform: skew(44deg);
+    }
+
+    .r {
+        border-left: 5px red dotted;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        margin-left: 40px;
+        top: 260px;
+        transform: skew(20deg);
+    }
+
+    .ball {
+        margin-left: 320px;
+        margin-top: -360px;
+        background-color: crimson;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: relative;
+        animation: moveball 4s linear infinite;
+    }
+
+    .ball:hover {
+        background-color: brown;
+
+    }
+
+    .title h1 {
+        margin: auto;
+        font-size: 20px;
+        font-style: italic;
+        color: yellow;
+    }
+
+    .title h2 {
+        margin-left: 850px;
+        margin-top: 90px;
+        font-size: 20px;
+        font-style: italic;
+        color: white;
+    }
+
+    @keyframes moveball {
+
+        0% {
+            transform: translate(0px, 0px)
+        }
+
+        50% {
+            transform: translate(170px, 180px)
+        }
+
+        70% {
+            transform: translate(225px, 330px)
+        }
+
+        100% {
+            transform: translate(410px, 420px)
+        }
+
+    }
+</style>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">SignUp</a></li>
+            <li><a href="Log in.html">Login</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+    </nav>
+   
+        <hr class="h">
+        <div class="v"></div>
+        <div class="i"></div>
+        <div class="r"></div>
+        <div class="ball"></div>
+        <div class="title">
+            <h1>Light Refraction Animation</h1>
+            <h2>Light Medium</h2>
+            <h2>Dense Medium</h2>
+            <h2>Light Medium</h2>
+        </div>
+        <script src="search.js"></script>
+    
+</body>
+
+</html>

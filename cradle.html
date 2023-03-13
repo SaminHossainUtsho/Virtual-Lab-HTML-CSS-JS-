@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/design.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: darkgrey;
+        margin: 0;
+        padding: 0;
+    }
+    .head h1{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-style: italic;
+        color: green;
+    }
+    .loader{
+        position: absolute;
+        margin-top: 30px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-top: 4px solid black;
+        border-bottom: 20px solid black;
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        display: flex;
+        padding: 0 50px 30px ;
+    }
+    .loader span{
+        position: relative;
+        display: block;
+        width: 5px;
+        height:200px;
+        background: white;
+        margin:0 12px;
+        transform-origin:top ;
+    }
+    .loader span:before{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        width:30px;
+        height: 30px;
+        left:-13px;   
+        background: black;
+        border-radius: 100%;
+    }
+    .loader span:first-child{
+        animation: animate 1s linear infinite;
+    }
+    .loader span:last-child{
+        animation: animate_last 1s linear infinite;
+        animation-delay :0.5s; 
+    }
+    @keyframes animate{
+       0%{
+        transform: rotate(0deg);
+       }  
+       25%{
+        transform: rotate(60deg);
+       }
+       50%{
+        transform: rotate(0deg);
+       }
+       100%{
+        transform: rotate(0deg);
+       }
+    }
+    @keyframes animate_last{
+       0%{
+        transform: rotate(0deg);
+       }  
+       25%{
+        transform: rotate(-60deg);
+       }
+       50%{
+        transform: rotate(0deg);
+       }
+       100%{
+        transform: rotate(0deg);
+       }
+    }
+</style>
+<script>
+    
+</script>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="logo"><img src="logo.jpg"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Sign Up.html">Sign Up</a></li>
+            <li><a href="Log in.html">Log in</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+
+    </nav>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="head">
+        <h1>Newtons Cradle Animation</h1>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>
